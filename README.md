@@ -1,11 +1,11 @@
-# babel-preset-es2015
+# babel-preset-es2015-nocommom
 
-> Babel preset for all es2015 plugins.
+> Babel preset for all es2015 plugins but babel-plugin-transform-es2015-modules-commonjs.
 
 ## Install
 
 ```sh
-$ npm install --save-dev babel-preset-es2015
+$ npm install --save-dev babel-preset-es2015-nocommom
 ```
 
 ## Usage
@@ -16,20 +16,17 @@ $ npm install --save-dev babel-preset-es2015
 
 ```json
 {
-  "presets": ["es2015"]
+  "presets": ["es2015-nocommom"]
 }
 ```
 
 ### Via CLI
 
-```sh
-$ babel script.js --presets es2015 
-```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  presets: ["es2015"]
+  presets: ["es2015-nocommom"]
 });
 ```
